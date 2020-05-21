@@ -1,12 +1,38 @@
+.header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+  }
 .container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    grid-gap: 10px;
-    background-color: #F0F8FF;
+    grid-template-areas: 'header header'
+    'left right'
+    'footer footer';
+    grid-gap: 5px;
     text-align: center;
 }
 
-.container > div{
-    background-color: silver;
+.left {
+    grid-area: left;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
 }
+
+.right {
+    grid-area: right;
+    background-color: #f1f1f1;
+    padding: 100px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.footer {  
+    grid-area: footer;
+    background-color: #f1f1f1;
+    padding: 100px;
+    text-align: center;
+    font-size: 25px;}
