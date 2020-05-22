@@ -37,8 +37,14 @@
     text-align: center;
     font-size: 25px;}
 
-.country {
-    display: inline-block; width:47%;
-    .cf-medium {width:97%;}
+.form {
+    display: inline-block; 
+    width:18%;
+}
+.form2 {
+    display: inline-block; 
+    width: 60px;
+}
 
+.select {
 }
